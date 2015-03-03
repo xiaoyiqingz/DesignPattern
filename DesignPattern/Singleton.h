@@ -1,5 +1,7 @@
 #pragma once
 
+namespace dp {
+
 class Singleton
 {
 public:
@@ -17,3 +19,5 @@ public:
 	static Singleton* pinstance;
 	static int num;
 };
+
+} // namespace dp

@@ -2,6 +2,8 @@
 #include "Product.h"
 #include <iostream>
 
+namespace dp {
+
 Factory::Factory()
 {
 	std::cout<< "Factory...." <<std::endl;
@@ -27,3 +29,4 @@ Product* ConcreateFactory::CreateProduct()
 	return new ConcreateProduct();
 }
 
+} // namespace dp

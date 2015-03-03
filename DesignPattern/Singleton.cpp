@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+namespace dp {
+
 //1.static Singleton instance;
 
 //Singleton Singleton::instance;
@@ -41,3 +43,6 @@ void Singleton::Print()
 	num = num+1;
 	std::cout << "Print...." << num << std::endl;
 }
+
+
+} //namespace dp

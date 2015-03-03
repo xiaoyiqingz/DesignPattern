@@ -1,5 +1,7 @@
 #pragma once
 
+namespace dp {
+
 class Product;
 
 class Factory
@@ -20,3 +22,5 @@ public:
 	 
 	virtual Product* CreateProduct();
 };
+
+} // namespace dp

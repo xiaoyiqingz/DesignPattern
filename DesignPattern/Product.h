@@ -1,5 +1,7 @@
 #pragma once
 
+namespace dp {
+
 class Product
 {
 public:
@@ -15,3 +17,4 @@ public:
 	ConcreateProduct();
 };
 
+} // namespace dp

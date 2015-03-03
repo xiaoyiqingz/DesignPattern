@@ -19,6 +19,9 @@
     <Filter Include="03Singleton">
       <UniqueIdentifier>{c67b1b61-2de7-468a-ab7c-3e0a7652cd38}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02AbstractFactory">
+      <UniqueIdentifier>{9c678b55-25c3-4053-b7d6-53426a187950}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -39,6 +42,12 @@
     <ClInclude Include="Singleton.h">
       <Filter>03Singleton</Filter>
     </ClInclude>
+    <ClInclude Include="AbsProduct.h">
+      <Filter>02AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AbsFactory.h">
+      <Filter>02AbstractFactory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -55,6 +64,12 @@
     </ClCompile>
     <ClCompile Include="Singleton.cpp">
       <Filter>03Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="AbsProduct.cpp">
+      <Filter>02AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AbsFactory.cpp">
+      <Filter>02AbstractFactory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
