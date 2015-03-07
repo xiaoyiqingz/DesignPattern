@@ -79,6 +79,9 @@
   <ItemGroup>
     <ClInclude Include="AbsFactory.h" />
     <ClInclude Include="AbsProduct.h" />
+    <ClInclude Include="Builder.h" />
+    <ClInclude Include="BuilderProduct.h" />
+    <ClInclude Include="Director.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="Singleton.h" />
@@ -88,7 +91,10 @@
   <ItemGroup>
     <ClCompile Include="AbsFactory.cpp" />
     <ClCompile Include="AbsProduct.cpp" />
+    <ClCompile Include="Builder.cpp" />
+    <ClCompile Include="BuilderProduct.cpp" />
     <ClCompile Include="DesignPattern.cpp" />
+    <ClCompile Include="Director.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="Singleton.cpp" />
