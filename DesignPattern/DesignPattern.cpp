@@ -19,11 +19,15 @@
 #include "Builder.h"
 #include "Director.h"
 
+//05
+#include "Prototype.h"
 
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
 void FuncBuilder();
+
+void FuncPrototype();
 
 using namespace dp;
 
@@ -32,7 +36,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncFactory();
 	//FuncAbstractFactory();
 	//FuncSingleton();
-	FuncBuilder();
+	//FuncBuilder();
+	FuncPrototype();
 
 	return 0;
 }
@@ -78,4 +83,17 @@ void FuncBuilder()
 	Director* pDirector2 = new Director(new ConcreteBuilderB());
 	BuilderProduct* pProduct2 = pDirector2->Construct();
 	pProduct2->ShowInfo();
+}
+
+void FuncPrototype()
+{
+	Prototype* type1 = new ConcretePrototypeA();
+	Prototype* type2 = new ConcretePrototypeB();
+	Prototype* typeA = type1->Clone();
+	Prototype* typeB = type2->Clone();
+
+	delete typeA;
+	delete type1;
+	delete typeB;
+	delete type2;
 }

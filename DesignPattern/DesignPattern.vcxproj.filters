@@ -25,6 +25,9 @@
     <Filter Include="04Builder">
       <UniqueIdentifier>{b68b9b1e-a25e-4de5-a311-d563223f9179}</UniqueIdentifier>
     </Filter>
+    <Filter Include="05Prototype">
+      <UniqueIdentifier>{4a1db7ed-d39e-453f-82a1-d6203bb417e1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -60,6 +63,9 @@
     <ClInclude Include="Director.h">
       <Filter>04Builder</Filter>
     </ClInclude>
+    <ClInclude Include="Prototype.h">
+      <Filter>05Prototype</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -91,6 +97,9 @@
     </ClCompile>
     <ClCompile Include="Director.cpp">
       <Filter>04Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototype.cpp">
+      <Filter>05Prototype</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
