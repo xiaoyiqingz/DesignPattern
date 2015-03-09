@@ -22,12 +22,17 @@
 //05
 #include "Prototype.h"
 
+//06
+#include "Bridge.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
 void FuncBuilder();
 
 void FuncPrototype();
+void FuncBridge();
+
 
 using namespace dp;
 
@@ -37,7 +42,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncAbstractFactory();
 	//FuncSingleton();
 	//FuncBuilder();
-	FuncPrototype();
+	//FuncPrototype();
+	FuncBridge();
 
 	return 0;
 }
@@ -96,4 +102,32 @@ void FuncPrototype()
 	delete type1;
 	delete typeB;
 	delete type2;
+}
+
+void FuncBridge()
+{
+/* 将抽象部分与它的实现部分分离，使得它们可以独立地变化
+
+1、抽象Abstraction与实现AbstractionImplement分离;
+
+2、抽象部分Abstraction可以变化，如new RefinedAbstractionA(imp)、new RefinedAbstractionB(imp2);
+
+3、实现部分AbstractionImplement也可以变化，如new ConcreteAbstractionImplementA()、new ConcreteAbstractionImplementB();
+*/
+
+	AbstractionImplement* imp1 = new ConcreteAbstractionImpA();   //实现部分ConcreteAbstractionImplementA
+	Abstraction* abs1 = new RedifinedAbstractionA(imp1);   //抽象部分RefinedAbstractionA
+	abs1->Operation();
+
+	AbstractionImplement* imp2 = new ConcreteAbstractionImpB();
+	Abstraction* abs2 = new RedifinedAbstractionA(imp2);
+	abs2->Operation();
+
+	AbstractionImplement* imp3 = new ConcreteAbstractionImpA();
+	Abstraction* abs3 = new RedifinedAbstractionB(imp3);
+	abs3->Operation();
+
+	AbstractionImplement* imp4 = new ConcreteAbstractionImpB();
+	Abstraction* abs4 = new RedifinedAbstractionB(imp4);
+	abs4->Operation();
 }
