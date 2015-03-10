@@ -79,6 +79,7 @@
   <ItemGroup>
     <ClInclude Include="AbsFactory.h" />
     <ClInclude Include="AbsProduct.h" />
+    <ClInclude Include="Adapter.h" />
     <ClInclude Include="Bridge.h" />
     <ClInclude Include="Builder.h" />
     <ClInclude Include="BuilderProduct.h" />
@@ -93,6 +94,7 @@
   <ItemGroup>
     <ClCompile Include="AbsFactory.cpp" />
     <ClCompile Include="AbsProduct.cpp" />
+    <ClCompile Include="Adapter.cpp" />
     <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="Builder.cpp" />
     <ClCompile Include="BuilderProduct.cpp" />

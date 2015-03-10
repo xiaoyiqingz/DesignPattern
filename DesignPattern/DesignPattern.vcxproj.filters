@@ -31,6 +31,9 @@
     <Filter Include="06Bridge">
       <UniqueIdentifier>{da99ec14-f1cc-4b04-80db-83b55e1cb4f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="07Adapter">
+      <UniqueIdentifier>{2052f741-7664-429e-bf22-dffd5b60b124}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -72,6 +75,9 @@
     <ClInclude Include="Bridge.h">
       <Filter>06Bridge</Filter>
     </ClInclude>
+    <ClInclude Include="Adapter.h">
+      <Filter>07Adapter</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -109,6 +115,9 @@
     </ClCompile>
     <ClCompile Include="Bridge.cpp">
       <Filter>06Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Adapter.cpp">
+      <Filter>07Adapter</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

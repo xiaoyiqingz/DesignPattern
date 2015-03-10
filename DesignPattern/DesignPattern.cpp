@@ -25,14 +25,17 @@
 //06
 #include "Bridge.h"
 
+//07
+#include "Adapter.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
 void FuncBuilder();
-
 void FuncPrototype();
-void FuncBridge();
 
+void FuncBridge();
+void FuncAdapter();
 
 using namespace dp;
 
@@ -43,7 +46,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncSingleton();
 	//FuncBuilder();
 	//FuncPrototype();
-	FuncBridge();
+	//FuncBridge();
+
+	FuncAdapter();
 
 	return 0;
 }
@@ -130,4 +135,20 @@ void FuncBridge()
 	AbstractionImplement* imp4 = new ConcreteAbstractionImpB();
 	Abstraction* abs4 = new RedifinedAbstractionB(imp4);
 	abs4->Operation();
+}
+
+void FuncAdapter()
+{
+	//类模式Adapter
+	Target* ada = new AdapterA();
+	ada->Request();
+
+	//对象模式Adapter
+	Adaptee* ade = new Adaptee();
+	Target* adb = new AdapterB(ade);
+	adb->Request();
+
+	delete ada;
+	delete ade;
+	delete adb;
 }
