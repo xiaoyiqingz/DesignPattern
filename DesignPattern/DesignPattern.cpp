@@ -28,6 +28,9 @@
 //07
 #include "Adapter.h"
 
+//08
+#include "Decorator.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -36,6 +39,7 @@ void FuncPrototype();
 
 void FuncBridge();
 void FuncAdapter();
+void FuncDecorator();
 
 using namespace dp;
 
@@ -46,9 +50,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncSingleton();
 	//FuncBuilder();
 	//FuncPrototype();
+	
 	//FuncBridge();
-
-	FuncAdapter();
+	//FuncAdapter();
+	FuncDecorator();
 
 	return 0;
 }
@@ -151,4 +156,19 @@ void FuncAdapter()
 	delete ada;
 	delete ade;
 	delete adb;
+}
+
+void FuncDecorator()
+{
+	Component* cp = new ConcreteComponent();
+
+	Decorator* de1 = new ConcreteDecoratorA(cp);
+	de1->Operation();
+
+	Decorator* de2 = new ConcreteDecoratorB(cp);
+	de2->Operation();
+
+	delete cp;
+	delete de1;
+	delete de2;
 }

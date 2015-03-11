@@ -34,6 +34,9 @@
     <Filter Include="07Adapter">
       <UniqueIdentifier>{2052f741-7664-429e-bf22-dffd5b60b124}</UniqueIdentifier>
     </Filter>
+    <Filter Include="08Decorator">
+      <UniqueIdentifier>{5abca64d-7886-4c68-9faf-8a0df67331d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -78,6 +81,9 @@
     <ClInclude Include="Adapter.h">
       <Filter>07Adapter</Filter>
     </ClInclude>
+    <ClInclude Include="Decorator.h">
+      <Filter>08Decorator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -118,6 +124,9 @@
     </ClCompile>
     <ClCompile Include="Adapter.cpp">
       <Filter>07Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator.cpp">
+      <Filter>08Decorator</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

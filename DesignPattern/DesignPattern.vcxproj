@@ -83,6 +83,7 @@
     <ClInclude Include="Bridge.h" />
     <ClInclude Include="Builder.h" />
     <ClInclude Include="BuilderProduct.h" />
+    <ClInclude Include="Decorator.h" />
     <ClInclude Include="Director.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Product.h" />
@@ -98,6 +99,7 @@
     <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="Builder.cpp" />
     <ClCompile Include="BuilderProduct.cpp" />
+    <ClCompile Include="Decorator.cpp" />
     <ClCompile Include="DesignPattern.cpp" />
     <ClCompile Include="Director.cpp" />
     <ClCompile Include="Factory.cpp" />
