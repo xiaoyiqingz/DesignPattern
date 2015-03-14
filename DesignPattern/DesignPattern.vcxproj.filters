@@ -37,6 +37,9 @@
     <Filter Include="08Decorator">
       <UniqueIdentifier>{5abca64d-7886-4c68-9faf-8a0df67331d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="09Composite">
+      <UniqueIdentifier>{997db42e-5945-4b03-8d91-52c69a80eb48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -84,6 +87,9 @@
     <ClInclude Include="Decorator.h">
       <Filter>08Decorator</Filter>
     </ClInclude>
+    <ClInclude Include="Composite.h">
+      <Filter>09Composite</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -127,6 +133,9 @@
     </ClCompile>
     <ClCompile Include="Decorator.cpp">
       <Filter>08Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Composite.cpp">
+      <Filter>09Composite</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

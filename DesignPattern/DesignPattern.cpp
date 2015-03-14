@@ -31,6 +31,9 @@
 //08
 #include "Decorator.h"
 
+//09
+#include "Composite.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -40,6 +43,7 @@ void FuncPrototype();
 void FuncBridge();
 void FuncAdapter();
 void FuncDecorator();
+void FuncComposite();
 
 using namespace dp;
 
@@ -53,7 +57,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	
 	//FuncBridge();
 	//FuncAdapter();
-	FuncDecorator();
+	//FuncDecorator();
+	FuncComposite();
 
 	return 0;
 }
@@ -171,4 +176,28 @@ void FuncDecorator()
 	delete cp;
 	delete de1;
 	delete de2;
+}
+
+void FuncComposite()
+{
+	Composite* pRoot = new Composite("Root");
+	pRoot->Add(new Leaf("Leaf"));
+	
+	pRoot->Add(new Composite("Son"));
+	ComponentEx* pFirstCom = pRoot->GetChild(1);
+	Leaf* pLeaf1 = new Leaf("Leaf1");
+	Leaf* pLeaf2 = new Leaf("Leaf2");
+
+	pFirstCom->Add(pLeaf1);
+	pFirstCom->Add(pLeaf2);
+
+	pFirstCom->GetChild(1)->Operation();
+
+	pFirstCom->Remove(pLeaf2);
+	pFirstCom->Remove(pLeaf1);
+
+	pRoot->Remove(pFirstCom);
+	pRoot->Remove(pRoot->GetChild(0));
+
+	delete pRoot;
 }
