@@ -40,6 +40,9 @@
     <Filter Include="09Composite">
       <UniqueIdentifier>{997db42e-5945-4b03-8d91-52c69a80eb48}</UniqueIdentifier>
     </Filter>
+    <Filter Include="10FlyWeight">
+      <UniqueIdentifier>{173cd257-100a-4cfb-882d-c2ea8a585430}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -90,6 +93,9 @@
     <ClInclude Include="Composite.h">
       <Filter>09Composite</Filter>
     </ClInclude>
+    <ClInclude Include="Flyweight.h">
+      <Filter>10FlyWeight</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -136,6 +142,9 @@
     </ClCompile>
     <ClCompile Include="Composite.cpp">
       <Filter>09Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="Flyweight.cpp">
+      <Filter>10FlyWeight</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

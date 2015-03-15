@@ -87,6 +87,7 @@
     <ClInclude Include="Decorator.h" />
     <ClInclude Include="Director.h" />
     <ClInclude Include="Factory.h" />
+    <ClInclude Include="Flyweight.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="Prototype.h" />
     <ClInclude Include="Singleton.h" />
@@ -105,6 +106,7 @@
     <ClCompile Include="DesignPattern.cpp" />
     <ClCompile Include="Director.cpp" />
     <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="Flyweight.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="Prototype.cpp" />
     <ClCompile Include="Singleton.cpp" />

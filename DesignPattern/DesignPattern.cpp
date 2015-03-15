@@ -34,6 +34,9 @@
 //09
 #include "Composite.h"
 
+//10
+#include "Flyweight.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -44,6 +47,7 @@ void FuncBridge();
 void FuncAdapter();
 void FuncDecorator();
 void FuncComposite();
+void FuncFlyweight();
 
 using namespace dp;
 
@@ -58,7 +62,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncBridge();
 	//FuncAdapter();
 	//FuncDecorator();
-	FuncComposite();
+	//FuncComposite();
+	FuncFlyweight();
 
 	return 0;
 }
@@ -200,4 +205,18 @@ void FuncComposite()
 	pRoot->Remove(pRoot->GetChild(0));
 
 	delete pRoot;
+}
+
+void FuncFlyweight()
+{
+	FlyweightFactory* pFwFac = new FlyweightFactory();
+	std::string str1 = pFwFac->GetFlyweightString(0);
+	std::string str2 = pFwFac->GetFlyweightString(0);
+	std::string str3 = pFwFac->GetFlyweightString(0);
+	
+	std::string str4 = pFwFac->GetFlyweightString(1);
+	std::string str5 = pFwFac->GetFlyweightString(2);
+	std::string str6 = pFwFac->GetFlyweightString(0);
+
+	delete pFwFac;
 }
