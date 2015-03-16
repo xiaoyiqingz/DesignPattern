@@ -10,6 +10,9 @@
 #include <stdio.h>
 #include <tchar.h>
 
+#define _CRTDBG_MAP_ALLO
+#include <crtdbg.h>
+#define new new( _CLIENT_BLOCK, __FILE__, __LINE__)
 
 
 // TODO: reference additional headers your program requires here

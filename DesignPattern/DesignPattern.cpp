@@ -65,6 +65,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncComposite();
 	FuncFlyweight();
 
+	 _CrtDumpMemoryLeaks(); 
 	return 0;
 }
 
