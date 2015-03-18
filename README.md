@@ -9,5 +9,6 @@
 
 3. 2015年3月18日10:06:17
    Facade: 外观模式 将要实现的功能封装在Facade里
+   Proxy: let subject Operation do in proxy
 
 	

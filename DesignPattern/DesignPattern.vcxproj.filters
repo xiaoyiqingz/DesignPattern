@@ -46,6 +46,9 @@
     <Filter Include="11Facade">
       <UniqueIdentifier>{d5c1aee6-2cd0-4f75-9510-2c7844b7cdbc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="12Proxy">
+      <UniqueIdentifier>{e80ff03f-8e5e-4a33-9e17-32ce4a7e1c0b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -102,6 +105,9 @@
     <ClInclude Include="Facade.h">
       <Filter>11Facade</Filter>
     </ClInclude>
+    <ClInclude Include="Proxy.h">
+      <Filter>12Proxy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -154,6 +160,9 @@
     </ClCompile>
     <ClCompile Include="Facade.cpp">
       <Filter>11Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy.cpp">
+      <Filter>12Proxy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

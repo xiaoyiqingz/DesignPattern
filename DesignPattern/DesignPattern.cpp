@@ -40,6 +40,9 @@
 //11
 #include "Facade.h"
 
+//12
+#include "Proxy.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -52,6 +55,7 @@ void FuncDecorator();
 void FuncComposite();
 void FuncFlyweight();
 void FuncFacade();
+void FuncProxy();
 
 using namespace dp;
 
@@ -68,7 +72,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncDecorator();
 	//FuncComposite();
 	//FuncFlyweight();
-	FuncFacade();
+	//FuncFacade();
+	FuncProxy();
 
 	getchar();
 	 _CrtDumpMemoryLeaks(); 
@@ -234,4 +239,20 @@ void FuncFacade()
 	fd->Operation();
 
 	delete fd;
+}
+
+void FuncProxy()
+{
+	Subject* sb = new ConcreteSubject();
+	
+	Proxy* pr = new Proxy(sb);
+
+	pr->Request();
+
+	delete pr;
+	pr = NULL;
+
+	sb->Request();
+	delete sb;
+	sb = NULL;
 }
