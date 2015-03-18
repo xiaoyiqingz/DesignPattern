@@ -49,6 +49,9 @@
     <Filter Include="12Proxy">
       <UniqueIdentifier>{e80ff03f-8e5e-4a33-9e17-32ce4a7e1c0b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="13Template">
+      <UniqueIdentifier>{f52775bd-c9a1-4bec-804d-915c55b885aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -108,6 +111,9 @@
     <ClInclude Include="Proxy.h">
       <Filter>12Proxy</Filter>
     </ClInclude>
+    <ClInclude Include="Template.h">
+      <Filter>13Template</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -163,6 +169,9 @@
     </ClCompile>
     <ClCompile Include="Proxy.cpp">
       <Filter>12Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Template.cpp">
+      <Filter>13Template</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

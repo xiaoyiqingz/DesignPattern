@@ -43,6 +43,9 @@
 //12
 #include "Proxy.h"
 
+//13
+#include "Template.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -56,6 +59,8 @@ void FuncComposite();
 void FuncFlyweight();
 void FuncFacade();
 void FuncProxy();
+
+void FuncTemplate();
 
 using namespace dp;
 
@@ -73,8 +78,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncComposite();
 	//FuncFlyweight();
 	//FuncFacade();
-	FuncProxy();
+	//FuncProxy();
 
+	FuncTemplate();
+	
 	getchar();
 	 _CrtDumpMemoryLeaks(); 
 	return 0;
@@ -255,4 +262,16 @@ void FuncProxy()
 	sb->Request();
 	delete sb;
 	sb = NULL;
+}
+
+void FuncTemplate()
+{
+	AbstractClass* ac1 = new ConcreteClass1();
+	AbstractClass* ac2 = new ConcreteClass2();
+
+	ac1->TemplateMethod();
+	ac2->TemplateMethod();
+
+	delete ac2;
+	delete ac1;
 }

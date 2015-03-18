@@ -11,4 +11,4 @@
    Facade: 外观模式 将要实现的功能封装在Facade里
    Proxy: let subject Operation do in proxy
 
-	
+   Template: it same like AbstractFactory	
