@@ -37,6 +37,9 @@
 //10
 #include "Flyweight.h"
 
+//11
+#include "Facade.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -48,6 +51,7 @@ void FuncAdapter();
 void FuncDecorator();
 void FuncComposite();
 void FuncFlyweight();
+void FuncFacade();
 
 using namespace dp;
 
@@ -63,8 +67,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncAdapter();
 	//FuncDecorator();
 	//FuncComposite();
-	FuncFlyweight();
+	//FuncFlyweight();
+	FuncFacade();
 
+	getchar();
 	 _CrtDumpMemoryLeaks(); 
 	return 0;
 }
@@ -220,4 +226,12 @@ void FuncFlyweight()
 	std::string str6 = pFwFac->GetFlyweightString(0);
 
 	delete pFwFac;
+}
+
+void FuncFacade()
+{
+	Facade* fd = new Facade();
+	fd->Operation();
+
+	delete fd;
 }

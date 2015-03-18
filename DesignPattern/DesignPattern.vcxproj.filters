@@ -43,6 +43,9 @@
     <Filter Include="10FlyWeight">
       <UniqueIdentifier>{173cd257-100a-4cfb-882d-c2ea8a585430}</UniqueIdentifier>
     </Filter>
+    <Filter Include="11Facade">
+      <UniqueIdentifier>{d5c1aee6-2cd0-4f75-9510-2c7844b7cdbc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -96,6 +99,9 @@
     <ClInclude Include="Flyweight.h">
       <Filter>10FlyWeight</Filter>
     </ClInclude>
+    <ClInclude Include="Facade.h">
+      <Filter>11Facade</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -145,6 +151,9 @@
     </ClCompile>
     <ClCompile Include="Flyweight.cpp">
       <Filter>10FlyWeight</Filter>
+    </ClCompile>
+    <ClCompile Include="Facade.cpp">
+      <Filter>11Facade</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
