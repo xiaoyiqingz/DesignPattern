@@ -46,6 +46,9 @@
 //13
 #include "Template.h"
 
+//14
+#include "Strategy.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -61,6 +64,7 @@ void FuncFacade();
 void FuncProxy();
 
 void FuncTemplate();
+void FuncStrategy();
 
 using namespace dp;
 
@@ -80,8 +84,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncFacade();
 	//FuncProxy();
 
-	FuncTemplate();
-	
+	//FuncTemplate();
+	FuncStrategy();
+
 	getchar();
 	 _CrtDumpMemoryLeaks(); 
 	return 0;
@@ -274,4 +279,18 @@ void FuncTemplate()
 
 	delete ac2;
 	delete ac1;
+}
+
+void FuncStrategy()
+{
+	Strategy* st = new ConcreteStrategyA();
+
+	Context* ct = new Context(st);
+
+	ct->DoAction();
+
+	if (ct != NULL) {
+		delete ct;
+		ct = NULL;
+	}
 }

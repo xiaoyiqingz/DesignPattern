@@ -11,4 +11,7 @@
    Facade: 外观模式 将要实现的功能封装在Facade里
    Proxy: let subject Operation do in proxy
 
-   Template: it same like AbstractFactory	
+   Template: it same like AbstractFactory
+
+4. 2015年3月20日20:26:48
+   Strategy: stategy使用组合实现接口，而Template使用继承实现接口  strategy与temeplate的区别也正是继承与组合两种实现接口方式的区别。

@@ -52,6 +52,9 @@
     <Filter Include="13Template">
       <UniqueIdentifier>{f52775bd-c9a1-4bec-804d-915c55b885aa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="14Strategy">
+      <UniqueIdentifier>{65295afd-0520-4199-9ffd-bd3492f4a1c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -114,6 +117,9 @@
     <ClInclude Include="Template.h">
       <Filter>13Template</Filter>
     </ClInclude>
+    <ClInclude Include="Strategy.h">
+      <Filter>14Strategy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -172,6 +178,9 @@
     </ClCompile>
     <ClCompile Include="Template.cpp">
       <Filter>13Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Strategy.cpp">
+      <Filter>14Strategy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
