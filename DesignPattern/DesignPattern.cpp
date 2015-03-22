@@ -49,6 +49,9 @@
 //14
 #include "Strategy.h"
 
+//15
+#include "State.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -65,6 +68,7 @@ void FuncProxy();
 
 void FuncTemplate();
 void FuncStrategy();
+void FuncState();
 
 using namespace dp;
 
@@ -85,7 +89,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncProxy();
 
 	//FuncTemplate();
-	FuncStrategy();
+	//FuncStrategy();
+	FuncState();
+
 
 	getchar();
 	 _CrtDumpMemoryLeaks(); 
@@ -293,4 +299,21 @@ void FuncStrategy()
 		delete ct;
 		ct = NULL;
 	}
+}
+
+void FuncState()
+{
+	State* st = new ConcreteStateA();
+
+	ContextS* ct = new ContextS(st);
+
+	ct->Request();
+	ct->Request();
+	ct->Request();
+	ct->Request();
+
+	delete ct;
+	delete st;
+	ct = NULL;
+	st = NULL;
 }
