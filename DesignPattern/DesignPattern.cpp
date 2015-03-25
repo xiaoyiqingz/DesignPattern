@@ -52,6 +52,9 @@
 //15
 #include "State.h"
 
+//16
+#include "Oberver.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -69,6 +72,7 @@ void FuncProxy();
 void FuncTemplate();
 void FuncStrategy();
 void FuncState();
+void FuncObserver();
 
 using namespace dp;
 
@@ -90,8 +94,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	//FuncTemplate();
 	//FuncStrategy();
-	FuncState();
-
+	//FuncState();
+	FuncObserver();
 
 	getchar();
 	 _CrtDumpMemoryLeaks(); 
@@ -316,4 +320,28 @@ void FuncState()
 	delete st;
 	ct = NULL;
 	st = NULL;
+}
+
+void FuncObserver()
+{
+	ConcreteObserverA* ob_a = new ConcreteObserverA();
+	ConCreteObserverB* ob_b = new ConCreteObserverB();
+
+	Notifyer* nt = new ConcreteNotifyer();
+	nt->Attach(ob_a);
+	nt->Attach(ob_b);
+	nt->Attach(ob_a);
+
+	nt->SetState("state1");
+	nt->Notify();
+
+	nt->SetState("state2");
+	nt->Notify();
+
+	nt->Detach(ob_a);
+	nt->Detach(ob_b);
+
+	delete nt;
+	delete ob_b;
+	delete ob_a;
 }

@@ -15,3 +15,6 @@
 
 4. 2015年3月20日20:26:48
    Strategy: stategy使用组合实现接口，而Template使用继承实现接口  strategy与temeplate的区别也正是继承与组合两种实现接口方式的区别。
+
+5. 2015年3月24日21:44:30
+   Observer: 需要一个类Notifyer来保存Observer的指针，当Notifyer有变化的时候，通过保存的Observer的指针调用Observer的函数，告诉Observer它想知道的事情发生了变化，它自己去更新，并不一定更新的内容和Notifyer有关，只是告诉Observer此时该更新了
