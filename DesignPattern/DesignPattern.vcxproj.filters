@@ -61,6 +61,9 @@
     <Filter Include="16Observer">
       <UniqueIdentifier>{2dca3d50-c355-4aa4-9608-c2a3d8cfb591}</UniqueIdentifier>
     </Filter>
+    <Filter Include="17Memento">
+      <UniqueIdentifier>{5fe9bc61-02c9-42eb-8630-0c3efb2ad8f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -132,6 +135,9 @@
     <ClInclude Include="Oberver.h">
       <Filter>16Observer</Filter>
     </ClInclude>
+    <ClInclude Include="Memento.h">
+      <Filter>17Memento</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -199,6 +205,9 @@
     </ClCompile>
     <ClCompile Include="Oberver.cpp">
       <Filter>16Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Memento.cpp">
+      <Filter>17Memento</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -55,6 +55,9 @@
 //16
 #include "Oberver.h"
 
+//17
+#include "Memento.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -73,6 +76,7 @@ void FuncTemplate();
 void FuncStrategy();
 void FuncState();
 void FuncObserver();
+void FuncMemento();
 
 using namespace dp;
 
@@ -95,7 +99,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncTemplate();
 	//FuncStrategy();
 	//FuncState();
-	FuncObserver();
+	//FuncObserver();
+	FuncMemento();
 
 	getchar();
 	 _CrtDumpMemoryLeaks(); 
@@ -344,4 +349,22 @@ void FuncObserver()
 	delete nt;
 	delete ob_b;
 	delete ob_a;
+}
+
+void FuncMemento()
+{
+	Originator* og = new Originator();
+	og->SetState("State1");
+	og->PrintState();
+
+	Memento* mt = og->CreateMemento();
+	og->SetMemento(mt);
+
+	og->SetState("state2");
+	og->PrintState();
+
+	og->RestoreToMemento(mt);
+	og->PrintState();
+
+	delete og;
 }
