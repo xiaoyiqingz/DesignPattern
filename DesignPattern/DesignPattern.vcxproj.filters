@@ -64,6 +64,9 @@
     <Filter Include="17Memento">
       <UniqueIdentifier>{5fe9bc61-02c9-42eb-8630-0c3efb2ad8f3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="18Mediator">
+      <UniqueIdentifier>{9ad5b734-7b91-4c29-bc62-8f38b9ab550f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -138,6 +141,9 @@
     <ClInclude Include="Memento.h">
       <Filter>17Memento</Filter>
     </ClInclude>
+    <ClInclude Include="Mediator.h">
+      <Filter>18Mediator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -208,6 +214,9 @@
     </ClCompile>
     <ClCompile Include="Memento.cpp">
       <Filter>17Memento</Filter>
+    </ClCompile>
+    <ClCompile Include="Mediator.cpp">
+      <Filter>18Mediator</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

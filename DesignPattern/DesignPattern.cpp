@@ -58,6 +58,9 @@
 //17
 #include "Memento.h"
 
+//18
+#include "Mediator.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -77,6 +80,7 @@ void FuncStrategy();
 void FuncState();
 void FuncObserver();
 void FuncMemento();
+void FuncMediator();
 
 using namespace dp;
 
@@ -100,7 +104,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncStrategy();
 	//FuncState();
 	//FuncObserver();
-	FuncMemento();
+	//FuncMemento();
+	FuncMediator();
 
 	getchar();
 	 _CrtDumpMemoryLeaks(); 
@@ -367,4 +372,33 @@ void FuncMemento()
 	og->PrintState();
 
 	delete og;
+}
+
+void FuncMediator()
+{
+	ConcreteMediator* md = new ConcreteMediator();
+
+	ConcreteColleageA* clgA = new ConcreteColleageA(md);
+	ConcreteColleageB* clgB = new ConcreteColleageB(md);
+
+	md->IntroColleage(clgA, clgB);
+
+	clgA->SetState("clgA");
+	clgB->SetState("clgB");
+	clgA->DoAction();
+	clgB->DoAction();
+
+	std::cout << std::endl;
+	clgA->SetState("new");
+	clgA->DoAction();
+	clgB->DoAction();
+	std::cout << std::endl;
+
+	clgB->SetState("old");
+	clgB->DoAction();
+	clgA->DoAction();
+
+	delete clgB;
+	delete clgA;
+	delete md;
 }
