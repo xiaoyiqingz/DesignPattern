@@ -18,3 +18,6 @@
 
 5. 2015年3月24日21:44:30
    Observer: 需要一个类Notifyer来保存Observer的指针，当Notifyer有变化的时候，通过保存的Observer的指针调用Observer的函数，告诉Observer它想知道的事情发生了变化，它自己去更新，并不一定更新的内容和Notifyer有关，只是告诉Observer此时该更新了
+
+6. 2015年3月26日23:03:28
+   Mediator: 当A和B需要相互通信时，由中间者来保存A，B信息，进行之间通信， 而A和B父类分别保存此Mediator即可，A和B通信时，只需要在自己的接口里调用Mediator完成通信，不用知道相互之间的信息
