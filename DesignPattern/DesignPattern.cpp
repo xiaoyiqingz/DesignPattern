@@ -64,6 +64,9 @@
 //19
 #include "Command.h"
 
+//20
+#include "Vistor.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -85,6 +88,7 @@ void FuncObserver();
 void FuncMemento();
 void FuncMediator();
 void FuncCommand();
+void FuncVistor();
 
 using namespace dp;
 
@@ -110,7 +114,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncObserver();
 	//FuncMemento();
 	//FuncMediator();
-	FuncCommand();
+	//FuncCommand();
+	FuncVistor();
+
+
 
 	getchar();
 	 _CrtDumpMemoryLeaks(); 
@@ -419,4 +426,26 @@ void FuncCommand()
 	delete iv;
 	delete cmd;
 	delete rc;
+}
+
+void FuncVistor()
+{
+	IVistor* vs_a = new ConcreteVistorA();
+	IVistor* vs_b = new ConcreteVistorB();
+	IElement* el_a = new ConcreteElementA();
+	IElement* el_b = new ConcreteElementB();
+
+	el_a->SetNum(20);
+	el_a->Accept(vs_a);
+
+	el_b->SetNum(-1);
+	el_b->Accept(vs_a);
+
+	el_a->Accept(vs_b);
+	el_b->Accept(vs_b);
+
+	delete el_b;
+	delete el_a;
+	delete vs_b;
+	delete vs_a;
 }
