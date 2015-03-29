@@ -70,6 +70,9 @@
     <Filter Include="19Command">
       <UniqueIdentifier>{bf280238-3dfd-4bb9-b486-47cf60417784}</UniqueIdentifier>
     </Filter>
+    <Filter Include="20Vistor">
+      <UniqueIdentifier>{75a8c5a7-38f4-460c-9f01-54cb19a76832}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -150,6 +153,9 @@
     <ClInclude Include="Command.h">
       <Filter>19Command</Filter>
     </ClInclude>
+    <ClInclude Include="Vistor.h">
+      <Filter>20Vistor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -226,6 +232,9 @@
     </ClCompile>
     <ClCompile Include="Command.cpp">
       <Filter>19Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Vistor.cpp">
+      <Filter>20Vistor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

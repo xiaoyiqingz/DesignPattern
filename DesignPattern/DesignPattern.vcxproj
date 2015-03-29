@@ -102,6 +102,7 @@
     <ClInclude Include="Strategy.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Template.h" />
+    <ClInclude Include="Vistor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbsFactory.cpp" />
@@ -129,6 +130,7 @@
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="Strategy.cpp" />
     <ClCompile Include="Template.cpp" />
+    <ClCompile Include="Vistor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
