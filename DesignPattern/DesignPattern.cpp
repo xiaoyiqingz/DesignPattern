@@ -61,6 +61,9 @@
 //18
 #include "Mediator.h"
 
+//19
+#include "Command.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -81,6 +84,7 @@ void FuncState();
 void FuncObserver();
 void FuncMemento();
 void FuncMediator();
+void FuncCommand();
 
 using namespace dp;
 
@@ -105,7 +109,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncState();
 	//FuncObserver();
 	//FuncMemento();
-	FuncMediator();
+	//FuncMediator();
+	FuncCommand();
 
 	getchar();
 	 _CrtDumpMemoryLeaks(); 
@@ -401,4 +406,17 @@ void FuncMediator()
 	delete clgB;
 	delete clgA;
 	delete md;
+}
+
+void FuncCommand()
+{
+	Receiver* rc = new Receiver();
+	Command* cmd = new ConcreteCommand(rc);
+	Invoker* iv = new Invoker(cmd);
+
+	iv->Invoke();
+	
+	delete iv;
+	delete cmd;
+	delete rc;
 }

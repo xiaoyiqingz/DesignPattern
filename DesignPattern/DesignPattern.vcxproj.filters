@@ -67,6 +67,9 @@
     <Filter Include="18Mediator">
       <UniqueIdentifier>{9ad5b734-7b91-4c29-bc62-8f38b9ab550f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="19Command">
+      <UniqueIdentifier>{bf280238-3dfd-4bb9-b486-47cf60417784}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -144,6 +147,9 @@
     <ClInclude Include="Mediator.h">
       <Filter>18Mediator</Filter>
     </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>19Command</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -217,6 +223,9 @@
     </ClCompile>
     <ClCompile Include="Mediator.cpp">
       <Filter>18Mediator</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>19Command</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
