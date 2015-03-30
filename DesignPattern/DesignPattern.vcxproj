@@ -90,6 +90,7 @@
     <ClInclude Include="Facade.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Flyweight.h" />
+    <ClInclude Include="Handle.h" />
     <ClInclude Include="Mediator.h" />
     <ClInclude Include="Memento.h" />
     <ClInclude Include="Oberver.h" />
@@ -119,6 +120,7 @@
     <ClCompile Include="Facade.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="Flyweight.cpp" />
+    <ClCompile Include="Handle.cpp" />
     <ClCompile Include="Mediator.cpp" />
     <ClCompile Include="Memento.cpp" />
     <ClCompile Include="Oberver.cpp" />
