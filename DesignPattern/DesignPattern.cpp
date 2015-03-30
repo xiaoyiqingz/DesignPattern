@@ -67,6 +67,9 @@
 //20
 #include "Vistor.h"
 
+//21
+#include "Handle.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -89,6 +92,8 @@ void FuncMemento();
 void FuncMediator();
 void FuncCommand();
 void FuncVistor();
+void FuncHandle();
+
 
 using namespace dp;
 
@@ -115,7 +120,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncMemento();
 	//FuncMediator();
 	//FuncCommand();
-	FuncVistor();
+	//FuncVistor();
+	FuncHandle();
 
 
 
@@ -448,4 +454,28 @@ void FuncVistor()
 	delete el_a;
 	delete vs_b;
 	delete vs_a;
+}
+
+void FuncHandle()
+{
+	Handle* hd1 = new ConcreteHandleA();
+	Handle* hd2 = new ConcreteHandleB(hd1);
+	Handle* hd3 = new ConcreteHandleA(hd2);
+	hd3->HandleRequest();
+
+	std::cout << std::endl;
+
+	Handle* hd4 = new ConcreteHandleB();
+	Handle* hd5 = new ConcreteHandleA();
+	Handle* hd6 = new ConcreteHandleB();
+	hd5->SetSuccessor(hd6);
+	hd4->SetSuccessor(hd5);
+	hd4->HandleRequest();
+
+	delete hd6;
+	delete hd5;
+	delete hd4;
+	delete hd3;
+	delete hd2;
+	delete hd1;
 }

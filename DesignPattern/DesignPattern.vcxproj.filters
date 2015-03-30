@@ -73,6 +73,9 @@
     <Filter Include="20Vistor">
       <UniqueIdentifier>{75a8c5a7-38f4-460c-9f01-54cb19a76832}</UniqueIdentifier>
     </Filter>
+    <Filter Include="21Chain Of Resopnsibility">
+      <UniqueIdentifier>{54f39b15-edd7-4920-b975-bc6566601072}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -156,6 +159,9 @@
     <ClInclude Include="Vistor.h">
       <Filter>20Vistor</Filter>
     </ClInclude>
+    <ClInclude Include="Handle.h">
+      <Filter>21Chain Of Resopnsibility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -235,6 +241,9 @@
     </ClCompile>
     <ClCompile Include="Vistor.cpp">
       <Filter>20Vistor</Filter>
+    </ClCompile>
+    <ClCompile Include="Handle.cpp">
+      <Filter>21Chain Of Resopnsibility</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
