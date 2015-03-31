@@ -70,6 +70,9 @@
 //21
 #include "Handle.h"
 
+//22 
+#include "Iterator.h"
+
 void FuncFactory();
 void FuncAbstractFactory();
 void FuncSingleton();
@@ -93,7 +96,7 @@ void FuncMediator();
 void FuncCommand();
 void FuncVistor();
 void FuncHandle();
-
+void FuncIterator();
 
 using namespace dp;
 
@@ -121,8 +124,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//FuncMediator();
 	//FuncCommand();
 	//FuncVistor();
-	FuncHandle();
-
+	//FuncHandle();
+	FuncIterator();
 
 
 	getchar();
@@ -478,4 +481,15 @@ void FuncHandle()
 	delete hd3;
 	delete hd2;
 	delete hd1;
+}
+
+void FuncIterator()
+{
+	IAggregate* ag = new ConcreteAggregate();
+	Iterator* iter = new ConcreteIterator(ag);
+
+	for (; !iter->IsDone(); iter->Next()) {
+		std::cout << iter->CurrentItem() << std::endl;
+	}
+
 }
