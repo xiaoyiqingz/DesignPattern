@@ -76,6 +76,9 @@
     <Filter Include="21Chain Of Resopnsibility">
       <UniqueIdentifier>{54f39b15-edd7-4920-b975-bc6566601072}</UniqueIdentifier>
     </Filter>
+    <Filter Include="22Iterator">
+      <UniqueIdentifier>{f1e83cfc-9996-44e1-bbe3-7b3e131cde4d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -162,6 +165,9 @@
     <ClInclude Include="Handle.h">
       <Filter>21Chain Of Resopnsibility</Filter>
     </ClInclude>
+    <ClInclude Include="Iterator.h">
+      <Filter>22Iterator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -244,6 +250,9 @@
     </ClCompile>
     <ClCompile Include="Handle.cpp">
       <Filter>21Chain Of Resopnsibility</Filter>
+    </ClCompile>
+    <ClCompile Include="Iterator.cpp">
+      <Filter>22Iterator</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
